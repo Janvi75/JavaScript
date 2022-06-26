@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+    <style>
+    *{
+        font-family: 'Times New Roman';
+    }
+    .gamecell{
+        width: 50px;
+        height: 50px;
+        border: 2px solid rgb(74, 94, 95);
+        border-radius: 5px;
+        font-size: 30px;
+        text-align: center;
+        background-color: rgb(240, 239, 223);
+    }
+    .gamebutton{
+        height: 25px;
+        width: 60px;
+        font-size: 15px;
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <table>
+       <tr>
+        <td class="gamecell" onclick="checkValue(this)" id="cell1"></td>
+        <td class="gamecell" onclick="checkValue(this)" id="cell2"></td>
+        <td class="gamecell" onclick="checkValue(this)" id="cell3"></td>
+       </tr>
+       <tr>
+        <td class="gamecell" onclick="checkValue(this)" id="cell4"></td>
+        <td class="gamecell" onclick="checkValue(this)" id="cell5"></td>
+        <td class="gamecell" onclick="checkValue(this)" id="cell6"></td>
+    </tr>
+    <tr>
+        <td class="gamecell" onclick="checkValue(this)" id="cell7"></td>
+        <td class="gamecell" onclick="checkValue(this)" id="cell8"></td>
+        <td class="gamecell" onclick="checkValue(this)" id="cell9"></td>
+    </tr>
+    </table>
+    <input type="button" class="gamebutton" value="Reset" onclick="resetGame();">
+    <p id="showMessage" style="color: green; font-size:20px ;"> </p> 
+<script src="ticTacToe.js" defer> </script>
+</body>
+</html>
